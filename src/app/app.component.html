@@ -1,0 +1,174 @@
+<div class="header" [class]='scroll'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="logo" src="../assets/images/logo.png" alt="logo" />
+      </div>
+      <div class="col-md-7">
+        <ul class="nav">
+          <li>Products</li>
+          <li>Solutions</li>
+          <li>Pricing</li>
+          <li>
+            <button class="btn-login">login</button>
+          </li>
+          <li>
+            <button class="btn-get-started">Get Started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="super">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="make-it">
+          <div>
+            <h1>
+              We make it Super <br />
+              Simple
+            </h1>
+          </div>
+          <div></div>
+          <div>
+            <img src="../assets/images/collect_img-video.png" width="100%"/>
+            <img class="accounting-dots" src="../assets/images/accounting_dots.svg" alt="">
+            <img class="bg-circle" src="../assets/images/blob-small.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="cal">
+          <div class="eligibility">
+            <h5 class="text-center eli-head">Eligibility Calculator</h5>
+
+            <div class="m-inc">
+              <h6>Monthly Incone</h6>
+              <h5>&#8377; {{monthlyIncome}}</h5>
+              <input
+                type="range"
+                name=""
+                id=""
+                min="10000"
+                max="300000"
+                (change) = "updateMonthIncome($event)"
+              />
+              <div>
+                <div class="range-value">
+                  <div>1,00,000</div>
+                  <div>3,00,000</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="m-exp">
+              <h6>Monthly Expense</h6>
+              <h5>&#8377; {{monthlyExpences}}</h5>
+              <input
+                type="range"
+                name=""
+                id=""
+                value="100000"
+                min="10000"
+                max="300000"
+                (change) = "updateMonthExpences($event)"
+              />
+            </div>
+
+            <div class="tenure">
+              <h6>Repayment Tenure</h6>
+              <select name="" id="">
+                <option><h5>6 Months</h5></option>
+                <option><h5>12 Months</h5></option>
+                <option><h5>18 Months</h5></option>
+              </select>
+            </div>
+
+            <div class="loan-exists">
+              <h6>Do you have any existing loans?</h6>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="existing-emi">
+              <h6>EMI of existing loan (optional)</h6>
+              <input type="number" name="" id="" placeholder="15,000" />
+            </div>
+          </div>
+          <div class="loan-amount">
+            <div>
+              <div>
+                <p>Loan Amount</p>
+                <h5>1,00,000</h5>
+
+                <p>Loan Amount</p>
+                <h5>1,00,000</h5>
+
+                <div class="get-money">GET MONEY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="../assets/images/Get Paid Instantly.png" />
+              <h6>Quick cash disbursment</h6>
+              <p>Get tearm loan that your bussiness needs within 72hrs</p>
+            </div>
+
+            <div class="card">
+              <img src="../assets/images/Low interest rate.png" />
+              <h6>Quick cash disbursment</h6>
+              <p>Get tearm loan that your bussiness needs within 72hrs</p>
+            </div>
+
+            <div class="card">
+              <img src="../assets/images/Secure Payments.png" />
+              <h6>Quick cash disbursment</h6>
+              <p>Get tearm loan that your bussiness needs within 72hrs</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card bus-fin">
+              <img src="../assets/images/freelancer_feature_icon_6@1.5x.png" />
+              <h6>Quick cash disbursment</h6>
+              <p>Get tearm loan that your bussiness needs within 72hrs</p>
+            </div>
+
+            <div class="card">
+              <img src="../assets/images/Secure Payments.png" />
+              <h6>Quick cash disbursment</h6>
+              <p>Get tearm loan that your bussiness needs within 72hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 boost-cont">
+        <div class="boost">
+          <h1>Boost your bussiness with Open</h1>
+          <div class="dash"></div>
+          <h5>Get your hands on term loan that is crafted for your bussiness</h5>
+          <button class="open-account">
+            <h5>Get an Open Account</h5>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
