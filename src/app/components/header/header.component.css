@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #3834341c;
+}
+.header .card-signs {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.header .card-signs img {
+  height: 50px;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+}

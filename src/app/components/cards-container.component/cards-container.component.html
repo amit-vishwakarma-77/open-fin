@@ -1,0 +1,22 @@
+<div class="cards-container">
+  <div
+    *ngFor="let card of cards; let i = index"
+    class="card"
+    [ngClass]="{ 'is-flipped': card.flip }"
+    (click)="flipTheCard(i)"
+    #cards
+  >
+    <div class="card__face card__face--front">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg"
+      />
+    </div>
+    <div class="card__face card__face--back">
+      <img [src]="card.img" />
+    </div>
+  </div>
+</div>
+<div class="game-controls" *ngIf="gameStarted">
+  <button [disabled]="!cardSelectionIsDone" (click)="shuffle()">Shuffle</button>
+  <button (click)="restart()">Restart Game</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="game-controls">
+  <div
+    class="play-game"
+    *ngIf="currentRound <= 1 && !gameStarted; else scoreCard"
+  >
+    <h3>Click 'Play Game' button to play the game</h3>
+    <button (click)="restart()">Play Game</button>
+  </div>
+  <ng-template #scoreCard>
+    <div class="score">
+      <div></div>
+      <h3>SCORE: {{ currentScore }}</h3>
+      <h3>ROUND: {{ currentRound }}</h3>
+    </div>
+    <h3>Please click on the card you think is ACE of Spades</h3>
+  </ng-template>
+</div>
